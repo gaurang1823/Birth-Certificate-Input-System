@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('wallpaper.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper.active {
+    width: 580px;
+}
+.admin {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.admin h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home {
+    width: 580px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+.about {
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+.form {
+    width: 40%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+.form h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.home h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box option {
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+.input-box textarea{
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 40px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.form .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label::before {
+    background-color: #fff;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .admin-link {
+    position: relative;
+    transition: none;
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.wrapper.active .admin-link {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.admin-link p a:hover {
+    text-decoration: underline;
+}
+
+
+.admin-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.admin-link p a:hover {
+    text-decoration: underline;
+}
+
+
+.service-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-box {
+    width: calc(33.33% - 20px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-box i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.service-box h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.admin-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.admin-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.admin-link p a:hover {
+    text-decoration: underline;
+}
+
+
+
+.form button,
+.backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    max-width: 150px;
+    width: 100%;
+    border: 2px solid #fff;
+    outline: none;
+    color: #f5f5f5;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.form .btnText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form button:hover {
+    background-color: #fff;
+    backdrop-filter: blur(80px);
+}
+
+.form .nextBtn:hover {
+    background: #fff;
+    color: #162938;
+}
+.form .backBtn:hover {
+    background: #fff;
+    color: #162938;
+}
+.form .submitBtn:hover {
+    background: #fff;
+    color: #162938;
+}
+
+form button i,
+form .backBtn i {
+    margin: 0 6px;
+}
+
+form .backBtn i {
+    transform: rotate(180deg);
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backBtn {
+    margin-right: 14px;
+}
+
+  .navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline:none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+.user-list{
+    color: #fff;
+}
+
+.user-list h2{
+    text-align: center;
+    width: 100%;
+    background: url('bar2.png');
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.users .buttons button,
+.btnLogin-popup {
+    margin-right: 100%;
+    align-items: center;
+}
+.users .btnLogin-popup:hover {
+    background: #fff;
+    color: #162938;
+}
