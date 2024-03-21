@@ -25,4 +25,4 @@ Receive the digital birth certificate instantly.
 Contributing
 Contributions to enhance the system’s features, security, and scalability are welcome. Please follow the guidelines in the CONTRIBUTING.md file.
 
-I worked on this together with my colleague Chetan Naik (@ChetanNaikk) 
+I worked on this together with my colleague Chetan Naik ([(https://github.com/ChetanNaikk)) 
